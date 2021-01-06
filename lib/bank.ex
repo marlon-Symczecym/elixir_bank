@@ -28,7 +28,7 @@ defmodule Bank do
   def search_accounts(), do: BankHelpers.read(@register_file[:accounts])
   def search_transations(), do: BankHelpers.read(@register_file[:transation])
 
-  def tranafer(from_cpf, to_cpf, value), do: Accounts.transfer(from_cpf, to_cpf, value)
+  def transfer(from_cpf, to_cpf, value), do: Accounts.transfer(from_cpf, to_cpf, value)
 
   def callin(account_cpf, value), do: Accounts.callin(account_cpf, value)
 end
